@@ -1,315 +1,602 @@
-<!-- Inliner Build Version 4a491cbbdbf75d9c4e9bed94bc553ed45f2d0603 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width" />
-  </head>
-  <body style="width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #222222; font-family: Arial , sans-serif !important; font-size: 15px !important; font-weight: normal; text-align: left; line-height: 19px; margin: 0 auto; padding: 0;"><style type="text/css">
-a:hover {
-color: #ff0000 !important;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<!-- If you delete this meta tag, the ground will open and swallow you. -->
+<meta name="viewport" content="width=device-width" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Tutors&Courses</title>
+	
+<style type="text/css">
+	/* ------------------------------------- 
+		GLOBAL 
+------------------------------------- */
+* { 
+	margin:0;
+	padding:0;
 }
-a:active {
-color: #ff0000 !important;
+* { font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+img { 
+	max-width: 100%; 
 }
-a:visited {
-color: #ff0000 !important;
+.collapse {
+	margin:0;
+	padding:0;
 }
-h1 a:active {
-color: #2ba6cb !important;
+body {
+	-webkit-font-smoothing:antialiased; 
+	-webkit-text-size-adjust:none; 
+	width: 100%!important; 
+	height: 100%;
 }
-h2 a:active {
-color: #2ba6cb !important;
+
+
+/* ------------------------------------- 
+		ELEMENTS 
+------------------------------------- */
+a { color: #2BA6CB;}
+
+.btn {
+	text-decoration:none;
+	color: #FFF;
+	background-color: #666;
+	padding:10px 16px;
+	font-weight:bold;
+	margin-right:10px;
+	text-align:center;
+	cursor:pointer;
+	display: inline-block;
 }
-h3 a:active {
-color: #2ba6cb !important;
+
+.btn_white {
+	text-decoration:none;
+	color: #00000;
+	background-color: #ffffff;
+	padding:10px 16px;
+	font-weight:bold;
+	margin-right:10px;
+	text-align:center;
+	cursor:pointer;
+	display: inline-block;
+
 }
-h4 a:active {
-color: #2ba6cb !important;
+
+p.callout {
+	padding:15px;
+	background-color:#ECF8FF;
+	margin-bottom: 15px;
 }
-h5 a:active {
-color: #2ba6cb !important;
+.callout a {
+	font-weight:bold;
+	color: #2BA6CB;
 }
-h6 a:active {
-color: #2ba6cb !important;
+
+table.social {
+/* 	padding:15px; */
+	background-color: #ebebeb;
+	
 }
-h1 a:visited {
-color: #2ba6cb !important;
+.social .soc-btn {
+	padding: 3px 7px;
+	font-size:12px;
+	margin-bottom:10px;
+	text-decoration:none;
+	color: #FFF;font-weight:bold;
+	display:block;
+	text-align:center;
 }
-h2 a:visited {
-color: #2ba6cb !important;
+a.fb { background-color: #3B5998!important; }
+a.tw { background-color: #1daced!important; }
+a.gp { background-color: #DB4A39!important; }
+a.ms { background-color: #000!important; }
+
+.sidebar .soc-btn { 
+	display:block;
+	width:100%;
 }
-h3 a:visited {
-color: #2ba6cb !important;
+
+/* ------------------------------------- 
+		HEADER 
+------------------------------------- */
+table.head-wrap { width: 100%;}
+
+.header.container table td.logo { padding: 15px; }
+.header.container table td.label { padding: 15px; padding-left:0px;}
+
+
+/* ------------------------------------- 
+		BODY 
+------------------------------------- */
+table.body-wrap { width: 100%;}
+
+
+/* ------------------------------------- 
+		FOOTER 
+------------------------------------- */
+table.footer-wrap { width: 100%;	clear:both!important;
 }
-h4 a:visited {
-color: #2ba6cb !important;
+.footer-wrap .container td.content  p { border-top: 1px solid rgb(215,215,215); padding-top:15px;}
+.footer-wrap .container td.content p {
+	font-size:10px;
+	font-weight: bold;
+	
 }
-h5 a:visited {
-color: #2ba6cb !important;
+
+
+/* ------------------------------------- 
+		TYPOGRAPHY 
+------------------------------------- */
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; text-transform: none; }
+
+h1 { font-weight:200; font-size: 20px;}
+h2 { font-weight:200; font-size: 18px;margin-bottom: 20px;}
+h3 { font-weight:500; font-size: 27px;}
+h4 { font-weight:500; font-size: 23px;}
+h5 { font-weight:900; font-size: 17px;}
+h6 { font-weight:900; font-size: 14px; text-transform: uppercase; color:#444;}
+
+.collapse { margin:0!important;}
+
+p, ul { 
+	margin-bottom: 10px; 
+	font-weight: normal; 
+	font-size:15px; 
+	line-height:1.6;
 }
-h6 a:visited {
-color: #2ba6cb !important;
+p.lead { font-size:17px; }
+p.last { margin-bottom:0px;}
+
+ul li {
+	margin-left:5px;
+	list-style-position: inside;
 }
-table.button:hover td {
-background: #2795b6 !important;
+
+.blue_text {
+	color: #005CAE;
 }
-table.button:visited td {
-background: #2795b6 !important;
+
+.custom_font {
+	font-family: "HelveticaNeueLtMdCn","Helvetica Neue",Helvetica,Arial,sans-serif; - custom;
 }
-table.button:active td {
-background: #2795b6 !important;
+
+.upperFont {
+	text-transform: uppercase;
 }
-table.button:hover td a {
-color: #fff !important;
+
+/* ------------------------------------- 
+		SIDEBAR 
+------------------------------------- */
+ul.sidebar {
+	background:#ebebeb;
+	display:block;
+	list-style-type: none;
 }
-table.button:visited td a {
-color: #fff !important;
+ul.sidebar li { display: block; margin:0;}
+ul.sidebar li a {
+	text-decoration:none;
+	color: #666;
+	padding:10px 16px;
+/* 	font-weight:bold; */
+	margin-right:10px;
+/* 	text-align:center; */
+	cursor:pointer;
+	border-bottom: 1px solid #777777;
+	border-top: 1px solid #FFFFFF;
+	display:block;
+	margin:0;
 }
-table.button:active td a {
-color: #fff !important;
+ul.sidebar li a.last { border-bottom-width:0px;}
+ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.sidebar li a h5,ul.sidebar li a h6,ul.sidebar li a p { margin-bottom:0!important;}
+
+
+
+/* --------------------------------------------------- 
+		RESPONSIVENESS
+		Nuke it from orbit. It's the only way to be sure. 
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+	display:block!important;
+	max-width:600px!important;
+	margin:0 auto!important; /* makes it centered */
+	clear:both!important;
 }
-table.button:hover td {
-background: #2795b6 !important;
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+	padding:15px 0;
+	max-width:600px;
+	margin:0 auto;
+	display:block; 
 }
-table.tiny-button:hover td {
-background: #2795b6 !important;
+
+.content_extra_padding {
+	padding: 15px;
+	max-width:600px;
+	margin:0 auto;
+	display:block; 
 }
-table.small-button:hover td {
-background: #2795b6 !important;
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table { width: 100%; }
+.content_extra_padding table { width: 100%; }
+
+
+/* Odds and ends */
+.column {
+	width: 300px;
+	float:left;
 }
-table.medium-button:hover td {
-background: #2795b6 !important;
+.column tr td { padding: 15px; }
+.column-wrap { 
+	padding:0!important; 
+	margin:0 auto; 
+	max-width:600px!important;
 }
-table.large-button:hover td {
-background: #2795b6 !important;
+.column table { width:100%;}
+.social .column {
+	width: 280px;
+	min-width: 279px;
+	float:left;
 }
-table.button:hover td a {
-color: #ffffff !important;
-}
-table.button:active td a {
-color: #ffffff !important;
-}
-table.button td a:visited {
-color: #ffffff !important;
-}
-table.tiny-button:hover td a {
-color: #ffffff !important;
-}
-table.tiny-button:active td a {
-color: #ffffff !important;
-}
-table.tiny-button td a:visited {
-color: #ffffff !important;
-}
-table.small-button:hover td a {
-color: #ffffff !important;
-}
-table.small-button:active td a {
-color: #ffffff !important;
-}
-table.small-button td a:visited {
-color: #ffffff !important;
-}
-table.medium-button:hover td a {
-color: #ffffff !important;
-}
-table.medium-button:active td a {
-color: #ffffff !important;
-}
-table.medium-button td a:visited {
-color: #ffffff !important;
-}
-table.large-button:hover td a {
-color: #ffffff !important;
-}
-table.large-button:active td a {
-color: #ffffff !important;
-}
-table.large-button td a:visited {
-color: #ffffff !important;
-}
-table.secondary:hover td {
-background: #d0d0d0 !important; color: #555;
-}
-table.secondary:hover td a {
-color: #555 !important;
-}
-table.secondary td a:visited {
-color: #555 !important;
-}
-table.secondary:active td a {
-color: #555 !important;
-}
-table.success:hover td {
-background: #457a1a !important;
-}
-table.alert:hover td {
-background: #970b0e !important;
-}
-table.facebook:hover td {
-background: #2d4473 !important;
-}
-table.twitter:hover td {
-background: #0087bb !important;
-}
-table.google-plus:hover td {
-background: #CC0000 !important;
-}
+
+/* Be sure to place a .clear element after each set of columns, just to be safe */
+.clear { display: block; clear: both; }
+
+
+/* ------------------------------------------- 
+		PHONE
+		For clients that support media queries.
+		Nothing fancy. 
+-------------------------------------------- */
 @media only screen and (max-width: 600px) {
-  table[class="body"] img {
-    width: auto !important; height: auto !important;
-  }
-  table[class="body"] center {
-    min-width: 0 !important;
-  }
-  table[class="body"] .container {
-    width: 95% !important;
-  }
-  table[class="body"] .row {
-    width: 100% !important; display: block !important;
-  }
-  table[class="body"] .wrapper {
-    display: block !important; padding-right: 0 !important;
-  }
-  table[class="body"] .columns {
-    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
-  }
-  table[class="body"] .column {
-    table-layout: fixed !important; float: none !important; width: 100% !important; padding-right: 0px !important; padding-left: 0px !important; display: block !important;
-  }
-  table[class="body"] .wrapper.first .columns {
-    display: table !important;
-  }
-  table[class="body"] .wrapper.first .column {
-    display: table !important;
-  }
-  table[class="body"] table.columns td {
-    width: 100% !important;
-  }
-  table[class="body"] table.column td {
-    width: 100% !important;
-  }
-  table[class="body"] td.offset-by-one {
-    padding-left: 0 !important;
-  }
-  table[class="body"] td.offset-by-two {
-    padding-left: 0 !important;
-  }
-  table[class="body"] td.offset-by-three {
-    padding-left: 0 !important;
-  }
-  table[class="body"] td.offset-by-four {
-    padding-left: 0 !important;
-  }
-  table[class="body"] td.offset-by-five {
-    padding-left: 0 !important;
-  }
-  table[class="body"] td.offset-by-six {
-    padding-left: 0 !important;
-  }
-  table[class="body"] td.offset-by-seven {
-    padding-left: 0 !important;
-  }
-  table[class="body"] td.offset-by-eight {
-    padding-left: 0 !important;
-  }
-  table[class="body"] td.offset-by-nine {
-    padding-left: 0 !important;
-  }
-  table[class="body"] td.offset-by-ten {
-    padding-left: 0 !important;
-  }
-  table[class="body"] td.offset-by-eleven {
-    padding-left: 0 !important;
-  }
-  table[class="body"] .expander {
-    width: 9999px !important;
-  }
-  table[class="body"] .right-text-pad {
-    padding-left: 10px !important;
-  }
-  table[class="body"] .text-pad-right {
-    padding-left: 10px !important;
-  }
-  table[class="body"] .left-text-pad {
-    padding-right: 10px !important;
-  }
-  table[class="body"] .text-pad-left {
-    padding-right: 10px !important;
-  }
-  table[class="body"] .hide-for-small {
-    display: none !important;
-  }
-  table[class="body"] .show-for-desktop {
-    display: none !important;
-  }
-  table[class="body"] .show-for-small {
-    display: inherit !important;
-  }
-  table[class="body"] .hide-for-desktop {
-    display: inherit !important;
-  }
-  table[class="body"] .right-text-pad {
-    padding-left: 10px !important;
-  }
-  table[class="body"] .left-text-pad {
-    padding-right: 10px !important;
-  }
+	
+	a[class="btn"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
+
+	div[class="column"] { width: auto!important; float:none!important;}
+	
+	table.social div[class="column"] {
+		width:auto!important;
+	}
+
 }
 </style>
-  <table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 680px; color: #222222; font-family: 'Arial', 'Helvetica', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0 auto; padding: 0;"><tr style="vertical-align: top; text-align: left; background: #ebebeb; padding: 0;" align="left" bgcolor="#ebebeb"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; padding: 0;" align="left" valign="top">
-      <table class="container" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px; background: #ffffff; margin: 0 auto; padding: 0;" bgcolor="#ffffff"><tr style="vertical-align: top; text-align: left; background: #ebebeb; padding: 0;" align="left" bgcolor="#ebebeb"><td class="padding-top-20" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; padding: 45px 0 0;" align="left" valign="top">
-              <a target="_blank" href="https://www.vodafone.hu/lakossagi/telefonok-tarifak/aktualis-ajanlatok/akcio/okostelefonok-vodafone-reddel#sony-xperia-sp" style="color: #2ba6cb; text-decoration: none;">
-                <img src="images/header.jpg" alt="Vodafone" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
-          </td>
-        </tr></table><table class="container main-content" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 580px !important; background: #ffffff; margin: 0 auto; padding: 0;" bgcolor="#ffffff"><tr style="vertical-align: top; text-align: left; background: #ffffff; padding: 0;" align="left" bgcolor="#ffffff"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; background: #ffffff; padding: 10px;" align="left" bgcolor="#ffffff" valign="top">
-            <table class="block-grid two-up " style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; width: 100%; max-width: 580px; padding: 0;"><tr style="vertical-align: top; text-align: left; background: #ffffff; padding: 0;" align="left" bgcolor="#ffffff"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; display: inline-block; width: 256px; background: #ffffff; padding: 35px 10px;" align="left" bgcolor="#ffffff" valign="top">
-                  <div style="margin-bottom: 23px;">
-                      Művészet és teljesítmény egyben: 
-                      a hol elegáns fekete, hol vibrálóan színes Xperia SP 4,6”-os kijelzővel 
-                      és 8 megapixeles kamerával most <br /><span class="strong-text" style="font-weight: bold;">1 Ft-ért</span> a tied lehet.
-                  </div>
-                  <div style="margin-bottom: 23px;">
-                      Hogyan? 
-                  </div>
-                  <div style="margin-bottom: 23px;">
-                      Válaszd új telefonod mellé 
-                      a Vodafone Red Basic B csomagot 
-                      két évre, e-Packkel, és beszélj korlátlanul új okostelefonodon!
-                  </div>
-                    <a target="_blank" href="https://www.vodafone.hu/lakossagi/telefonok-tarifak/aktualis-ajanlatok/akcio/okostelefonok-vodafone-reddel#sony-xperia-sp" style="color: #2ba6cb; text-decoration: none;">
-                        <img src="images/btn-buy.png" alt="Vodafone" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
 
-                </td><td align="right" class="right" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; display: inline-block; width: 256px; background: #ffffff; padding: 35px 10px;" bgcolor="#ffffff" valign="top"> <!-- Make sure the tags are directly next to each other -->
+<style type="text/css">
+	
+</style>
 
-                      <a target="_blank" href="https://www.vodafone.hu/lakossagi/telefonok-tarifak/aktualis-ajanlatok/akcio/okostelefonok-vodafone-reddel#sony-xperia-sp" style="color: #2ba6cb; text-decoration: none; display: inline-block;">
-                          <img src="images/phone.png" alt="Vodafone" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
+</head>
+ 
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
 
-                </td>
-              </tr></table></td>
-        </tr></table><table class="container gray mgBottom30" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 600px !important; background-color: #ebebeb !important; margin: 0 auto 35px; padding: 0;" bgcolor="#ebebeb !important"><tr style="vertical-align: top; text-align: left; background: #ebebeb; padding: 0;" align="left" bgcolor="#ebebeb"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; padding: 0;" align="left" valign="top">
-             <div class="wrapper" style="width: 540px; margin: 0 auto;"> <h3 style="color: #222222; font-family: 'Arial', 'Helvetica', sans-serif; font-weight: normal; text-align: left; line-height: 1.3; width: 680px; word-break: normal; font-size: 21px; margin: 20px 0; padding: 0;" align="left"> Kerülj még közelebb a Vodafone-hoz!</h3></div>
-          </td>
-        </tr><tr style="vertical-align: top; text-align: left; background: #ebebeb; padding: 0;" align="left" bgcolor="#ebebeb"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; padding: 0;" align="left" valign="top">
-            <div class="wrapper" style="width: 540px; margin: 0 auto;">
-              <a target="_blank" href="https://twitter.com/Vodafone_HU" style="color: #2ba6cb; text-decoration: none; display: inline-block; margin-right: 10px;">
-                <img src="images/icon-twitter.png" alt="Vodafone" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
-            <a target="_blank" href="https://www.facebook.com/vodafonehungary" style="color: #2ba6cb; text-decoration: none; display: inline-block; margin-right: 10px;">
-                <img src="images/icon-fb.png" alt="Vodafone" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
-            <a target="_blank" href="http://www.youtube.com/user/VodafoneHU" style="color: #2ba6cb; text-decoration: none; display: inline-block; margin-right: 10px;">
-                <img src="images/icon-youtube.png" alt="Vodafone" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
-            <a target="_blank" href="https://plus.google.com/+vodafonehungary/posts" style="color: #2ba6cb; text-decoration: none; display: inline-block; margin-right: 10px;">
-                <img src="images/icon-google.png" alt="Vodafone" style="outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; width: auto; max-width: 100%; float: left; clear: both; display: block; border: none;" align="left" /></a>
-          </div>
-        </td>
-        </tr></table><table class="container gray" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: inherit; width: 600px !important; background-color: #ebebeb !important; margin: 0 auto; padding: 0;" bgcolor="#ebebeb !important"><tr style="vertical-align: top; text-align: left; background: #ebebeb; padding: 0;" align="left" bgcolor="#ebebeb"><td style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: left; padding: 0;" align="left" valign="top">
-            <p class="footer-text" style="color: #494d4d; font-family: 'Arial'; font-weight: normal; text-align: left; line-height: 19px; width: 540px; font-size: 11px; border-top-color: #cdd5d3; border-top-width: 1px; border-top-style: solid; margin: 0 auto; padding: 35px 0 10px;" align="left">
-              A Vodafone Red Basic és Plus ajánlatok visszavonásig érvényesek Egyéni Előfizetők részére. A havidíjban foglalt korlátlan percek, SMS-ek és MMS-ek kizárólag belföldi, nem emelt díjas irányok esetén érvényesek. Havidíjas Előfizetői Szerződés esetén az Előfizető előzetes hitelképesség-vizsgálaton esik át. Az eredmény függvényében a Vodafone jogosult a szolgáltatás igénybevételét előleg vagy egyéb, más biztosíték (pl. bankgarancia, kezesség stb.) adásához kötni. Az Előfizetői Szerződés hatálybalépését követő 2 éven belül az Előfizető érdekkörében felmerülő okból a szolgáltatás szüneteltetésére, korlátozására vagy az Előfizetői Szerződés megszüntetésére kerül sor, a lakossági ÁSZF 7.5. pontjában, illetve az Előfizetői Szerződésben meghatározott mértékű kötbér fizetendő. Amennyiben a határozott időtartam lejárta előtt legalább 30 nappal egyik fél sem jelzi, hogy az Előfizetői Szerződés megszüntetését kéri, úgy az Előfizetői Szerződés a határozott idő lejártával határozatlan idejűvé alakul. A 2 éves határozott idejű szerződés lejártával a csomag havidíja a mindenkori ÁSzF 1. sz. Díjszabás melléklete szerinti havidíj. A Vodafone Red szolgáltatáscsomagok kizárólag a lakossági felhasználás szabályainak betartása mellett, természetes személy felhasználók személyes hírközlési igényeinek kielégítésére használhatóak (személyi használat), melybe nem értendő bele például, ha a SIM kártyát nem mobiltelefon készülékben használják; hívások automatizált indítása; hívások tömeges indítása automatikus hívásfogadó eszközök felé; szolgáltatások, műszaki eszközök tesztelése, próbaüzeme stb. céljából; személyek, objektumok stb. távolról történő megfigyelése céljából (pl. vagyonőrzési funkciók); gép-gép kapcsolat (M2M) létrehozása céljából; hívások indítása vagy átirányítása napi 24 órát meghaladó összidőtartamban. A szolgáltatáscsomagok üzleti célokra nem használhatóak (pl. telemarketing, ügyfélszolgálati tevékenység, tömeges SMS küldés) és a Tethering szolgáltatás (internet eléréssel nem rendelkező eszköz csatlakoztatása az internethez egy más internetezésre alkalmas készülék segítségével) igénybevétele nem engedélyezett. Nem rendeltetésszerű használat esetén, a Vodafone fenntartja magának a jogot, hogy előzetes figyelmeztetést követően korlátozza, megszüntesse a szolgáltatást vagy SMS-ben történő előzetes értesítést követően az előfizetést a Hang+Adat Alaptarifára átváltsa. A 3G/HSDPA/HSUPA-technológiával lefedett területeken az internet szolgáltatás általánosan elvárható le- és feltöltési sebessége 2/1 Mbit/s; a garantált sebesség az új szabályozásnak megfelelően az esetek 100%-ára vonatkozóan adandó meg, ennek értéke 0/0 Mbit/s. A Red Super tarifacsomag előfizetői automatikusan Gold státuszt kapnak a Vodafone Dinamikus Szolgáltatásminőség Szabályozó rendszerében, így mindig a felhasználó készüléke által biztosított elérhető legmagasabb szolgáltatási színvonalon élvezhetik belföldön a Vodafone adatszolgáltatásait. A Gold státusz nem befolyásolja az ÁSZF-ben vállalt garantált sebességet, és a csomagban foglalt adatkeret, illetve a kiegészítő PluszAdat keretéig érvényes. A készülékbiztosítás szolgáltatást kizárólag a Vodafone–tól, 60 napnál nem régebben vásárolt készülékekre áll módunkban nyújtani. További részletek:<a href="http://vodafone.hu/keszulekbiztositas" target="_blank" class="link" style="color: #4a4d4e; text-decoration: underline; display: inline-block; margin-right: 10px; font-family: 'Arial'; font-size: 11px;">www.vodafone.hu/keszulekbiztositas.</a> A Vodafone Cloud szolgáltatás a <a class="link" href="http://cloud.vodafone.hu" target="_blank" style="color: #4a4d4e; text-decoration: underline; display: inline-block; margin-right: 10px; font-family: 'Arial'; font-size: 11px;"> cloud.vodafone.hu</a> oldalon történt előzetes regisztráció után vehető igénybe. A szolgáltatás használata során keletkezett adatforgalom a Vodafone Red tarifacsomagokban foglalt adatforgalom terhére vehető igénybe. E-Pack igénybevétele esetén, kedvezőbb havi előfizetési díj ellenében, az Előfizető vállalja az alábbi feltételek teljesítését minden hónapban, amíg az e-Pack szolgáltatást igénybe veszi: Az Előfizető valamennyi előfizetése tekintetében E-számlát vesz igénybe, a számlabefizetés a számlán feltüntetett fizetési határidőig megtörténik és a számla kiegyenlítése a következő fizetési módok valamelyikével történik <a href="http://vodafone.hu/szamlabefizetés" class="link" target="_blank" style="color: #4a4d4e; text-decoration: underline; display: inline-block; margin-right: 10px; font-family: 'Arial'; font-size: 11px;">(www.vodafone.hu/szamlabefizetés</a> oldalon keresztül, az E-számla profilon keresztül, a Vodafone mobil alkalmazáson keresztül, banki átutalással, csoportos beszedési megbízással, ATM automatákon keresztül. Amennyiben az Előfizető valamely hónapban nem tesz eleget a fenti feltételek bármelyikének, a következő havi számláján egy bruttó 1000 Ft-os egyszeri díj kerül kiterhelésre. Ha az Előfizető egy hónapban több e-Pack feltételt is megszeg, az e-Pack feltételek nem teljesítésének díja ebben az esetben is csak havi egy alkalommal kerül kiszámlázásra. 
-              <br /><br />
-              További feltételek és információk az üzletekben, a belföldi hálózatból díjmentesen hívható 1270-es telefonszámon, a <a target="_blank" class="link" href="http://vodafone.hu" style="color: #4a4d4e; text-decoration: underline; display: inline-block; margin-right: 10px; font-family: 'Arial'; font-size: 11px;">www.vodafone.hu</a> weboldalon és a Lakossági ÁSZF Díjszabás A fejezet 2.1.8. pontjában található.
-            </p>
-          </td>
-        </tr></table></td>
-    </tr></table></body>
+<!-- HEADER -->
+<table class="head-wrap" bgcolor="#ebebeb">
+	<tr>
+		<td></td>
+		<td class="header container" align="">
+			
+			<!-- /content -->
+			<div class="content">
+				<table bgcolor="#ebebeb" >
+					<tr>
+						<td><img src="images/logo.jpg" /></td>
+						<td align="right">
+						<div>
+						<!--[if mso]>
+						  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:36px;v-text-anchor:middle;width:90px;" arcsize="14%" strokecolor="#cdcdcd" fillcolor="#ffffff">
+						    <w:anchorlock/>
+						    <center style="color:#000000;font-family:sans-serif;font-size:13px;font-weight:bold;">Tovább</center>
+						  </v:roundrect>
+						<![endif]-->
+						<a href="http://"
+						style="background-color:#ffffff;border:1px solid #cdcdcd;border-radius:5px;color:#000000;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:36px;text-align:center;text-decoration:none;width:90px;-webkit-text-size-adjust:none;mso-hide:all;">Tovább</a></div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h1>Árvíztűrő tükörfurógép</h1>
+						</td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+			
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /HEADER -->
+
+<!-- BODY -->
+<table class="body-wrap" bgcolor="">
+	<tr>
+		<td></td>
+		<td class="container" align="" bgcolor="#FFFFFF">
+			
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+							
+							<h2>Great Scott!</h2>
+							<p>Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing elit, <b>sed do eiusmod tempor incididunt</b> ut labore et.</p>
+
+							<p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing</b> elit, sed do eiusmodb	<b> tempor incididunt ut labore</b> et dolore magna aliqua. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreb <b> et dolore</b> magna aliqua. </p>
+						</td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+			<table class="head-wrap" bgcolor="#f7f7f7">
+				<tr>
+					<td></td>
+					<td class="header container" align="">
+						
+						<!-- /content -->
+						<div class="content_extra_padding">
+							<table bgcolor="#f7f7f7" >
+								<tr>
+									<td>
+										<p><b>lorem ipsum dolor sit amet</b></p>
+									</td>
+									<td align="right">
+									<div>
+										<div><!--[if mso]>
+										  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:34px;v-text-anchor:middle;width:108px;" arcsize="15%" strokecolor="#ef6f01" fillcolor="#ff8d2a">
+										    <w:anchorlock/>
+										    <center style="color:#ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">Upgrade now</center>
+										  </v:roundrect>
+										<![endif]--><a href="http://"
+										style="background-color:#ff8d2a;border:1px solid #ef6f01;border-radius:5px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:34px;text-align:center;text-decoration:none;width:108px;-webkit-text-size-adjust:none;mso-hide:all;">Upgrade now</a></div>
+									</td>
+								</tr>
+							</table>
+						</div><!-- /content -->
+						
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			
+			<!-- content -->
+			<div class="content">
+				
+				<table bgcolor="">
+					<tr>
+						<td class="small" width="26%" style="vertical-align: top; padding-right:30px;"><img src="images/tutor-series-1.gif" /></td>
+						<td>
+							<p class="blue_text" ><b>Lorem ipsum dolor sit amet ipsum dolor sit </b></p>
+							<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+						</td>
+					</tr>
+				</table>
+			
+			</div><!-- /content -->
+			
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="26%" style="vertical-align: top; padding-right:30px;"><img src="images/tutor-series-2.gif"  /></td>
+					<td>
+						<p class="blue_text" ><b>Lorem ipsum dolor sit amet ipsum dolor sit </b></p>
+						<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+			
+			<!-- content -->
+			<div class="content"><table bgcolor="">
+				<tr>
+					<td class="small" width="26%" style="vertical-align: top; padding-right:30px;"><img src="images/tutor-series-3.gif" /></td>
+					<td>
+						<p class="blue_text" ><b>Lorem ipsum dolor sit amet ipsum dolor sit </b></p>
+						<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					</td>
+				</tr>
+			</table></div><!-- /content -->
+
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+							<p>Lorem ipsum <b>dolor sit amet</b> consectetur adipisicing elit, <b>sed do eiusmod tempor incididunt</b> ut labore et.</p>
+							<p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing</b> elit, sed do eiusmodb	<b> tempor incididunt ut labore</b> et dolore magna aliqua. Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboreb <b> et dolore</b> magna aliqua. </p>
+						</td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+							<p><b>Lorem ipsum</b></p>
+						</td>
+					</tr>
+				</table>
+				<table bgcolor="">
+					<tr>
+						<td width="15px"><img width="8px" src="images/bullet.gif"></td>
+						<td>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						</td>
+					</tr>
+					<tr>
+						<td width="15px"><img width="8px" src="images/bullet.gif"></td>
+						<td>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						</td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+							<h5 class="upperFont blue_text">Lorem ipsum dolor sit amet</h4>
+						</td>
+					</tr>
+				</table>
+				<table bgcolor="">
+					<tr>
+						<td>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							</p>
+						</td>
+					</tr>
+				</table>
+				<table bgcolor="">
+					<tr>
+						<td width="15px"><img width="8px" src="images/bullet.gif"></td>
+						<td>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						</td>
+					</tr>
+					<tr>
+						<td width="15px"><img width="8px" src="images/bullet.gif"></td>
+						<td>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+						</td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+			<!-- content -->
+			<div class="content">
+				<table>
+					<tr>
+						<td align="center">
+							<div><!--[if mso]>
+							  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:50px;v-text-anchor:middle;width:299px;" arcsize="10%" strokecolor="#75ad02" fillcolor="#75ad02">
+							    <w:anchorlock/>
+							    <center style="color:#ffffff;font-family:sans-serif;font-size:23px;font-weight:bold;">Upgrade now</center>
+							  </v:roundrect>
+							<![endif]--><a href="http://"
+							style="background-color:#75ad02;border:1px solid #75ad02;border-radius:5px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:23px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:299px;-webkit-text-size-adjust:none;mso-hide:all;">Upgrade now</a>
+							</div>		
+						</td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+
+			<table class="head-wrap" bgcolor="#f7f7f7">
+				<tr>
+					<td></td>
+					<td class="header container" align="">
+						
+						<!-- /content -->
+						<div class="content_extra_padding">
+							<table bgcolor="#f7f7f7" >
+								<tr>
+									<td>
+										<p><b>A lövetkező lépés</b></p>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Iratkozz fel a hírlevelünkre</p>
+									</td>
+								</tr>
+							</table>
+						</div><!-- /content -->
+						
+					</td>
+					<td></td>
+				</tr>
+			</table>
+			
+			<!-- content -->
+			<div class="content">
+				<table bgcolor="">
+					<tr>
+						<td>
+							
+							<!-- social & contact -->
+							<table bgcolor="" class="social" width="100%">
+								<tr>
+									<td>
+										
+										<!--- column 1 -->
+										<div class="column">
+											<table bgcolor="" cellpadding="" align="left">
+										<tr>
+											<td>				
+												
+												<h5 class="">Connect with Us:</h5>
+												<p class=""><a href="#" class="soc-btn fb">Facebook</a> <a href="#" class="soc-btn tw">Twitter</a> <a href="#" class="soc-btn gp">Google+</a></p>
+						
+												
+											</td>
+										</tr>
+									</table><!-- /column 1 -->
+										</div>
+										
+										<!--- column 2 -->
+										<div class="column">
+											<table bgcolor="" cellpadding="" align="left">
+										<tr>
+											<td>				
+																			
+												<h5 class="">Contact Info:</h5>												
+												<p>Phone: <strong>408.341.0600</strong><br/>
+                Email: <strong><a href="emailto:hseldon@trantor.com">hseldon@trantor.com</a></strong></p>
+                
+											</td>
+										</tr>
+									</table><!-- /column 2 -->	
+										</div>
+										
+										<div class="clear"></div>
+	
+									</td>
+								</tr>
+							</table><!-- /social & contact -->
+							
+						</td>
+					</tr>
+				</table>
+			</div><!-- /content -->
+			
+
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /BODY -->
+
+<!-- FOOTER -->
+<table class="footer-wrap">
+	<tr>
+		<td></td>
+		<td class="container">
+			
+				<!-- content -->
+				<div class="content">
+					<table>
+						<tr>
+							<td align="center">
+								<p>
+									<a href="#">Terms</a> |
+									<a href="#">Privacy</a> |
+									<a href="#"><unsubscribe>Unsubscribe</unsubscribe></a>
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div><!-- /content -->
+				
+		</td>
+		<td></td>
+	</tr>
+</table><!-- /FOOTER -->
+
+</body>
 </html>
