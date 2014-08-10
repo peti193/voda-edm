@@ -24,6 +24,20 @@
   div[class="column_70"] {
     width: auto !important; float: none !important;
   }
+  td[class="mobileshow"] {
+    display: block !important;
+  }
+  td[class="mobilehide"] {
+    display: none !important;
+  }
+}
+@media only screen and (max-device-width: 320px) {
+  td[class=container] {
+    width: 320px !important;
+  }
+  div[class=content] {
+    width: 320px !important;
+  }
 }
 </style>
 
@@ -246,23 +260,23 @@
 	</tr></table><!-- /BODY --><!-- FOOTER --><table width="100%" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><td height="30px" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"></td>
 	</tr><tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><td class="container" style="height: 1px; width: 100%; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; display: block !important; max-width: 600px !important; clear: both !important; background: none; margin: 0 auto; padding: 0; border-color: #e8e8e8; border-style: solid; border-width: 1px 0 0;"> 
 		</td>
-	</tr></table><table class="footer-wrap" width="100%" border-top="1px solid #f7f7f7" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; width: 100%; clear: both !important; margin: 0; padding: 0;">
-						<tr>
-						<td height="5px"></td>
-					</tr>
-	<tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"></td>
+	</tr></table><table class="footer-wrap" width="100%" border-top="1px solid #f7f7f7" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; width: 100%; clear: both !important; margin: 0; padding: 0;"><tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"></td>
 		<td class="container" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; display: block !important; max-width: 600px !important; clear: both !important; margin: 0 auto; padding: 0;">
 
 			<!-- column -->
-			<div class="column" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; width: 300px; float: left; margin: 0; padding: 0;">
-				<table style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; width: 100%; margin: 0; padding: 0;">
-				<tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><td align="left" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;">
+			<div class="column" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; width: 50%; float: left; margin: 0; padding: 0;">
+				<table style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; width: 100%; margin: 0; padding: 0;"><tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><td align="left" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;">
 							<p style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; font-size: 15px; line-height: 1.6; margin: 0; padding: 0;">Lorem ipsum dolor <span class="light_color" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #a1a1a1; margin: 0; padding: 0;">|</span> <a href="#" class="light" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #a1a1a1; text-decoration: none; margin: 0; padding: 0;">Leiratkozás</a></p>
 						</td>
 					</tr></table></div><!-- /column -->
 
-			<div class="column" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; width: 300px; float: left; margin: 0; padding: 0;">
-				<table style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; width: 100%; margin: 0; padding: 0;"><tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><td align="right" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;">
+			<div class="column" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; width: 50%; float: left; margin: 0; padding: 0;">
+				<table style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; width: 100%; margin: 0; padding: 0;"><tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><td align="right" class="mobilehide" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;">
+							<a href="#" class="light" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #a1a1a1; text-decoration: none; margin: 0; padding: 0;">Email beállítások</a>
+							<span class="light_color" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #a1a1a1; margin: 0; padding: 0;">|</span>
+							<a href="#" class="light_color" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #a1a1a1; text-decoration: none; margin: 0; padding: 0;">Házi beállítások</a>
+						</td>
+						<td align="left" class="mobileshow" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; display: none !important; margin: 0; padding: 0;">
 							<a href="#" class="light" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #a1a1a1; text-decoration: none; margin: 0; padding: 0;">Email beállítások</a>
 							<span class="light_color" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #a1a1a1; margin: 0; padding: 0;">|</span>
 							<a href="#" class="light_color" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #a1a1a1; text-decoration: none; margin: 0; padding: 0;">Házi beállítások</a>
@@ -272,8 +286,7 @@
 
 		</td>
 		<td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"></td>
-	</tr></table><table width="100%" bgcolor="" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;">
-	<tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><td class="container" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; display: block !important; max-width: 600px !important; clear: both !important; margin: 0 auto; padding: 0;">
+	</tr></table><table width="100%" bgcolor="" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; margin: 0; padding: 0;"><td class="container" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; display: block !important; max-width: 600px !important; clear: both !important; margin: 0 auto; padding: 0;">
 			<p class="light_color" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; color: #a1a1a1; font-weight: normal; font-size: 15px; line-height: 1.6; margin: 0; padding: 0;">© 2014 lorem ipsum dolor sit amet dolor sit</p>
 		</td>
 	</tr></table><!-- /FOOTER --></body>
